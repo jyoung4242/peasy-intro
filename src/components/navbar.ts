@@ -1,5 +1,4 @@
 export class NavBar {
-  name = "World";
   template = `
     <style>
         .nav-wrapper {
@@ -48,21 +47,29 @@ export class NavBar {
     </style>
     <nav>
         <div class="nav-wrapper">
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>Home \${navbar.name}</li>
-                <li>What is Peasy?</li>
-                <li>Bindings/Template</li>
-                <li>Events</li>
-                <li>CSS</li>
-                <li>Animations</li>
-                <li>Components</li>
+            <ul id="nav-mobile"  class="right hide-on-med-and-down">
+                <li data-id="home" \${click@=>navbar.linkRoute}>Home</li>
+                <li data-id="peasy" \${click@=>navbar.linkRoute}>What is Peasy?</li>
+                <li data-id="bindings" \${click@=>navbar.linkRoute}>Bindings/Template</li>
+                <li data-id="events" \${click@=>navbar.linkRoute}>Events</li>
+                <li data-id="css" \${click@=>navbar.linkRoute}>CSS</li>
+                <li data-id="array" \${click@=>navbar.linkRoute}>Arrays</li>
+                <li data-id="animations" \${click@=>navbar.linkRoute}>Animations</li>
+                <li data-id="components" \${click@=>navbar.linkRoute}>Components</li>
             </ul>
         </div>
-        <div class="nav_aboutme">
+        <div data-id="about" \${click@=>navbar.linkRoute} class="nav_aboutme">
             About Me
         </div>
     </nav>
     `;
+
+  linkRoute = (event: Event, model: any, element: HTMLElement) => {
+    const link = element.getAttribute("data-id");
+    console.log("here", link);
+
+    model.router.changeRoute(link);
+  };
 
   constructor() {}
 }
