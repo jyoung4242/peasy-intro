@@ -22,7 +22,7 @@ export class AboutMe {
             </p>
              <a class="home_link"  href="https://jyoung4242.github.io/Squeleto-Docs/#/">https://jyoung4242.github.io/Squeleto-Docs/#/</a>
 
-            <p>Here is my twitter profile: <a class="home_link"  href="https://twitter.com/jyoung4242">https://twitter.com/jyoung4242</a></p>
+            <p>Here is my twitter profile: <a class="home_link"  href="https://twitter.com/jyoung424242">https://twitter.com/jyoung424242</a></p>
             <p>Here is my github profile: <a class="home_link" href="https://github.com/jyoung4242">https://github.com/jyoung4242</a></p>
             <p>Here is my itch.io profile: <a class="home_link"  href="https://mookie4242.itch.io/">https://mookie4242.itch.io/</a></p>
             <p>Here is my dev.to profile: <a class="home_link"  href="https://dev.to/jyoung4242">https://dev.to/jyoung4242</a></p>
