@@ -44,22 +44,34 @@ export class NavBar {
         nav li:hover {
             background-color: var(--current-dark-accent);
         }
+
+        
+        .home_link {
+        color: whitesmoke;
+        }
+
+        .home_link:visited {
+        color: darkgrey;
+        }
+
     </style>
     <nav>
         <div class="nav-wrapper">
             <ul id="nav-mobile"  class="right hide-on-med-and-down">
-                <li data-id="home" \${click@=>navbar.linkRoute}>Home</li>
-                <li data-id="peasy" \${click@=>navbar.linkRoute}>What is Peasy?</li>
-                <li data-id="bindings" \${click@=>navbar.linkRoute}>Bindings/Template</li>
-                <li data-id="events" \${click@=>navbar.linkRoute}>Events</li>
-                <li data-id="css" \${click@=>navbar.linkRoute}>CSS</li>
-                <li data-id="array" \${click@=>navbar.linkRoute}>Arrays</li>
-                <li data-id="animations" \${click@=>navbar.linkRoute}>Animations</li>
-                <li data-id="components" \${click@=>navbar.linkRoute}>Components</li>
+                
+                <li><a \${click@=>navbar.linkRoute} data-id="home" class="home_link" href="#home">Home</a></li>
+                <li><a \${click@=>navbar.linkRoute} data-id="peasy" class="home_link" href="#peasy">What is Peasy?</a></li>
+                <li><a \${click@=>navbar.linkRoute} data-id="bindings" class="home_link" href="#bindings">Bindings/Templates</a></li>
+                <li><a \${click@=>navbar.linkRoute} data-id="events" class="home_link" href="#events">Events</a></li>
+                <li><a \${click@=>navbar.linkRoute} data-id="css" class="home_link" href="#css">CSS</a></li>
+                <li><a \${click@=>navbar.linkRoute} data-id="array" class="home_link" href="#array">Arrays</a></li>
+                <li><a \${click@=>navbar.linkRoute} data-id="animations" class="home_link" href="#animations">Animations</a></li>
+                <li></li>               
+                
             </ul>
         </div>
-        <div data-id="about" \${click@=>navbar.linkRoute} class="nav_aboutme">
-            About Me
+        <div class="nav_aboutme">
+            <a \${click@=>navbar.linkRoute} data-id="about" class="home_link" href="#about">About Me</a>    
         </div>
     </nav>
     `;
