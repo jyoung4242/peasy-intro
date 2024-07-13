@@ -36,7 +36,7 @@ export class ArraysPage {
         <div >
               <h1>Array Binding</h1>
                             
-              <p>Lists or Arrays have their own unique binding and behaviors.  Let's dig into them. The example below demonstrates
+              <p>Lists or Arrays have their own unique binding and behaviors.  Let's dig into them. The example below demonstrates the binding and the data model.
               </p>  
 
               <img id="arraybinding" src="${arraypng}" alt="Array binding" style="display:block"/>
