@@ -33,7 +33,7 @@ export class CSSPage {
              <img id="css" src="${csspng}" alt="CSS binding"/>
               
              <div>
-                <div>
+                <div style="margin-bottom: 10px">
                     Box Color: 
                     <select \${==>router.csspage.selectelement} \${change@=>router.csspage.changedivcolor}>
                         <option value="red">Red</option>
