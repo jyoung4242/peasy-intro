@@ -7,9 +7,10 @@ import { Bindings } from "./bindings";
 import { EventPage } from "./events";
 import { CSSPage } from "./css";
 import { ArraysPage } from "./arrays";
+import { Animations } from "./animations";
 
 export class Router {
-  current: Routes = "array";
+  current: Routes = "animations";
   changeRoute(newRoute: Routes) {
     this.current = "blank";
 
@@ -25,6 +26,7 @@ export class Router {
   eventpage = new EventPage();
   csspage = new CSSPage();
   arraypage = new ArraysPage();
+  animations = new Animations();
 
   get showHome() {
     return this.current == "home";
@@ -150,7 +152,9 @@ export class Router {
     <div \${===router.showArray} class="transitiondiv">
         ${this.arraypage.template}
     </div>
-    <div \${===router.showAnimations} class="transitiondiv">Animations</div>
+    <div \${===router.showAnimations} class="transitiondiv">
+        ${this.animations.template}
+    </div>
     <div \${===router.showComponents} class="transitiondiv">Components</div>
     <div \${===router.showBlank}></div>
   </div>`;
