@@ -6,9 +6,10 @@ import { Peasy } from "./peasy";
 import { Bindings } from "./bindings";
 import { EventPage } from "./events";
 import { CSSPage } from "./css";
+import { ArraysPage } from "./arrays";
 
 export class Router {
-  current: Routes = "home";
+  current: Routes = "array";
   changeRoute(newRoute: Routes) {
     this.current = "blank";
 
@@ -23,6 +24,7 @@ export class Router {
   bindings = new Bindings();
   eventpage = new EventPage();
   csspage = new CSSPage();
+  arraypage = new ArraysPage();
 
   get showHome() {
     return this.current == "home";
@@ -54,6 +56,10 @@ export class Router {
 
   get showBlank() {
     return this.current == "blank";
+  }
+
+  get showArrayPage() {
+    return this.current == "array";
   }
 
   template = `
@@ -140,6 +146,9 @@ export class Router {
 
     <div \${===router.showCSS} class="transitiondiv">
         ${this.csspage.template}
+    </div>
+    <div \${===router.showArray} class="transitiondiv">
+        ${this.arraypage.template}
     </div>
     <div \${===router.showAnimations} class="transitiondiv">Animations</div>
     <div \${===router.showComponents} class="transitiondiv">Components</div>

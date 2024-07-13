@@ -18,6 +18,7 @@ export class HomePage {
         <li><a \${click@=>router.homepage.linkRoute} data-id="bindings" class="home_link" href="#bindings">Templates and Bindings</a></li>
         <li><a \${click@=>router.homepage.linkRoute} data-id="events" class="home_link" href="#events">Events</a></li>
         <li><a \${click@=>router.homepage.linkRoute} data-id="css" class="home_link" href="#css">CSS</a></li>
+        <li><a \${click@=>router.homepage.linkRoute} data-id="array" class="home_link" href="#css">Arrays</a></li>
         <li><a \${click@=>router.homepage.linkRoute} data-id="animations" class="home_link" href="#animations">Animations</a></li>
         <li><a \${click@=>router.homepage.linkRoute} data-id="components" class="home_link" href="#components">Components</a></li>
         <li><a \${click@=>router.homepage.linkRoute} data-id="about" class="home_link" href="#about">About Me</a></li>
