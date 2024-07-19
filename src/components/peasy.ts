@@ -4,11 +4,7 @@ import apipic from "../assets/api.png";
 export class Peasy {
   template = `
         <style>
-          #profilepic {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-          }
+          
 
           #apipic {
             position: fixed;

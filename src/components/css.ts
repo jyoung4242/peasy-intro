@@ -24,6 +24,7 @@ export class CSSPage {
             @media (max-width: 700px) {
           .transitiondiv {
             width: 92%;
+            overflow-y: scroll;
           }
           .transitiondiv img {
             width: 100%;

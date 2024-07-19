@@ -10,6 +10,7 @@ export class AboutMe {
          @media (max-width: 700px) {
           .transitiondiv {
             width: 92%;
+            overflow-y: scroll;
           }
           .transitiondiv img {
             width: 50%;
@@ -17,8 +18,8 @@ export class AboutMe {
           }
           
           #profilepic {
-          width: 150px;
-          height: 150px;
+          width: 100px;
+          height: 100px;
           border-radius: 50%;
         }
 

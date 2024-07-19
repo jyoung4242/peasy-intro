@@ -112,10 +112,12 @@ export class Bindings {
           @media (max-width: 700px) {
           .transitiondiv {
             width: 95%;
+            overflow-y: scroll;
           }
 
           .transitiondiv select {
             width: 100%;
+            overflow-y: scroll;
           }   
 
           .transitiondiv .option {
