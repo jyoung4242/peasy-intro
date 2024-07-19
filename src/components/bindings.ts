@@ -117,13 +117,7 @@ export class Bindings {
 
           .transitiondiv select {
             width: 100%;
-            overflow-y: scroll;
           }   
-
-          .transitiondiv .option {
-            width: 75%;
-            height: 50px;
-          }
           
         </style>
         <div>
