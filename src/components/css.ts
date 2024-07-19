@@ -20,6 +20,22 @@ export class CSSPage {
                 border: 1px solid black;
                 transition: all 0.25s;
             }
+
+            @media (max-width: 700px) {
+          .transitiondiv {
+            width: 92%;
+          }
+          .transitiondiv img {
+            width: 100%;
+          }
+          
+          .transitiondiv input{
+            height: 40px;
+          
+          }
+
+                   
+        }
         </style>
         <div>
               <h1>CSS Binding</h1>
@@ -34,14 +50,16 @@ export class CSSPage {
               
              <div>
                 <div style="margin-bottom: 10px">
-                    Box Color: 
+                    <div>Box Color: 
                     <select \${==>router.csspage.selectelement} \${change@=>router.csspage.changedivcolor}>
                         <option value="red">Red</option>
                         <option value="blue">Blue</option>
                         <option value="green">Green</option>
-                    </select>
-                    Box Width:
-                    <input type="number" \${input@=>router.csspage.changeboxwidth} value="100"/>
+                    </select></div>
+                    <div> Box Width:
+                    <input type="number" \${input@=>router.csspage.changeboxwidth} value="100"/></div>
+                    
+                   
                 </div>
 
                 <div class="csstestbox" style="height: 100px;">

@@ -11,7 +11,7 @@ import { Animations } from "./animations";
 import { Components } from "./components";
 
 export class Router {
-  current: Routes = "home";
+  current: Routes = "about";
   changeRoute(newRoute: Routes) {
     this.current = "blank";
 
@@ -81,6 +81,14 @@ export class Router {
       font-size: 24px;
 
     }
+      @media (max-width: 700px) {
+      .router {
+        font-size: 18px;
+        padding-left: 3px;
+        width: 78%;
+        height: 80%;
+      }
+    }
 
     .home_link {
       color: whitesmoke;
@@ -124,6 +132,10 @@ export class Router {
     }
     }
     
+    
+
+
+
   </style>
   <div class="router">
       

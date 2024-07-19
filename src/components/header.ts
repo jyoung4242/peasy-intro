@@ -18,6 +18,11 @@ export class Header {
           justify-content: space-between;
           padding: 0 20px;
         }
+        @media (max-width: 700px) {
+        header {
+            height: 8%;
+          }
+        }
       </style>
       <header>
           <h1>\${header.name}</h1>

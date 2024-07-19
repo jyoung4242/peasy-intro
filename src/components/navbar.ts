@@ -1,9 +1,7 @@
 export class NavBar {
   template = `
     <style>
-        .nav-wrapper {
         
-        }
         nav {
             background-color: var(--current-background);
             color: var(--current-foreground);
@@ -54,6 +52,45 @@ export class NavBar {
         color: darkgrey;
         }
 
+        @media (max-width: 700px) {
+        nav {
+            left:0;
+            top: 8%;
+            width: 16%;
+            height: 92%;
+            border-right: 1px solid var(--current-dark-accent);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0 5px;
+            font-size: 12px;
+    
+        }
+        #nav-mobile {
+            padding: 5px;
+           
+        }
+        #nav-mobile li {
+            padding: 5px;
+            
+        }
+        #nav-mobile li a {
+            text-wrap: wrap;
+            
+        }
+        .nav_aboutme {
+            left:0;
+            bottom: 0;
+            width: 100%;
+            height: 7%;
+            border-top: 1px solid var(--current-dark-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5px;
+            z-index: 2;
+        }
+
     </style>
     <nav>
         <div class="nav-wrapper">
@@ -61,7 +98,7 @@ export class NavBar {
                 
                 <li><a \${click@=>navbar.linkRoute} data-id="home" class="home_link" href="#home">Home</a></li>
                 <li><a \${click@=>navbar.linkRoute} data-id="peasy" class="home_link" href="#peasy">What is Peasy?</a></li>
-                <li><a \${click@=>navbar.linkRoute} data-id="bindings" class="home_link" href="#bindings">Bindings/Templates</a></li>
+                <li><a \${click@=>navbar.linkRoute} data-id="bindings" class="home_link" href="#bindings">Bindings/ Templates</a></li>
                 <li><a \${click@=>navbar.linkRoute} data-id="events" class="home_link" href="#events">Events</a></li>
                 <li><a \${click@=>navbar.linkRoute} data-id="css" class="home_link" href="#css">CSS</a></li>
                 <li><a \${click@=>navbar.linkRoute} data-id="array" class="home_link" href="#array">Arrays</a></li>

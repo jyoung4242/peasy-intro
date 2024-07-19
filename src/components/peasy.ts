@@ -18,6 +18,14 @@ export class Peasy {
             
             border-radius: 15px;
           }
+
+        @media (max-width: 700px) {
+        #apipic {
+            width: 60%;
+            right: 10%;
+            bottom: 100px;
+          }
+        }          
           
         </style>
         <div>

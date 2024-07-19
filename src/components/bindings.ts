@@ -108,6 +108,20 @@ export class Bindings {
             
             border-radius: 15px;
           }
+
+          @media (max-width: 700px) {
+          .transitiondiv {
+            width: 95%;
+          }
+
+          .transitiondiv select {
+            width: 100%;
+          }   
+
+          .transitiondiv .option {
+            width: 75%;
+            height: 50px;
+          }
           
         </style>
         <div>

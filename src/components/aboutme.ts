@@ -6,6 +6,24 @@ export class AboutMe {
           height: 300px;
           border-radius: 50%;
         }
+
+         @media (max-width: 700px) {
+          .transitiondiv {
+            width: 92%;
+          }
+          .transitiondiv img {
+            width: 50%;
+            height: 50%;
+          }
+          
+          #profilepic {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+
+                   
+        }
         
       </style>
       <div>

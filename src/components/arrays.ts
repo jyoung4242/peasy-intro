@@ -30,8 +30,35 @@ export class ArraysPage {
   };
 
   template = `
-        <style>
-           
+  <style>
+        .arraydiv{
+          display: flex; 
+          gap: 10px;
+          flex-wrap: wrap; 
+          justify-content: flex-start;
+          align-items: center;
+          border: 1px solid whitesmoke;
+          width: 600px;
+          height: auto;
+        }
+        .arrayunit{
+          padding: 10px;
+        }
+        
+        @media (max-width: 700px) {
+          .transitiondiv {
+            width: 92%;
+          }
+          .transitiondiv img {
+            width: 100%;
+          }
+          
+          .arraydiv{
+            width: 100%;
+          }
+
+                   
+        }
         </style>
         <div >
               <h1>Array Binding</h1>
@@ -46,8 +73,8 @@ export class ArraysPage {
                             
              <button \${click@=>router.arraypage.addUnit} style="margin-top: 10px;margin-bottom: 10px">Add Unit</button>    
              <button \${click@=>router.arraypage.popUnit}>Pop Unit</button>    
-             <div  style="display: flex; gap: 10px;flex-wrap: wrap; justify-content: flex-start;align-items: center; border: 1px solid whitesmoke; width: 600px; height: auto">
-                <div \${unit<=*router.arraypage.myArray:id} style="background-color: \${unit.color}; padding: 10px">
+             <div class="arraydiv">
+                <div class="arrayunit" \${unit<=*router.arraypage.myArray:id} style="background-color: \${unit.color};">
                     <span>\${unit.value}</span>
                 </div>
              </div>

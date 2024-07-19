@@ -35,6 +35,16 @@ export class Animations {
                opacity: 0;
            }
 
+            @media (max-width: 700px) {
+          .transitiondiv {
+            width: 92%;
+          }
+          .transitiondiv img {
+            width: 100%;
+          }
+                  
+        }
+
         </style>
         <div >
               <h1>Animations</h1>

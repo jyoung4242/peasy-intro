@@ -27,6 +27,31 @@ export class EventPage {
   }
   template = `
 
+        <style>
+
+
+          .events{
+          display: flex; justify-content: space-between; align-items: center;
+          }
+
+          @media (max-width: 700px) {
+          .transitiondiv {
+            width: 92%;
+          }
+          .transitiondiv img {
+            width: 100%;
+          }
+          
+
+          .events{
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          }
+        }
+          
+        </style>
+
         <div>
               <h1>Events</h1>
                             
@@ -38,7 +63,7 @@ export class EventPage {
   
               <img id="eventmodel" src="${eventmodel}" alt="Event model"/>
               
-              <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div class='events' style="">
                     <div>
                         <h3>Click Event</h3>
                         <button \${click@=>router.eventpage.clickhandler}>Click me</button>
