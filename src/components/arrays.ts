@@ -71,14 +71,14 @@ export class ArraysPage {
               <img id="arraybinding" src="${arraypng2}" alt="Array binding" style="display:block;margin-top: 10px"/>
               
               <p>Key items to point out is that i'm using the key property of the object as the unique id.  I also added a color property to the object to be used in the css.I'm using the value of the object, the color property, and the id </p>
-                            
-             <button \${click@=>router.arraypage.addUnit} style="margin-top: 10px;margin-bottom: 10px">Add Unit</button>    
-             <button \${click@=>router.arraypage.popUnit}>Pop Unit</button>    
              <div class="arraydiv">
                 <div class="arrayunit" \${unit<=*router.arraypage.myArray:id} style="background-color: \${unit.color};">
                     <span>\${unit.value}</span>
                 </div>
-             </div>
+             </div>           
+             <button \${click@=>router.arraypage.addUnit} style="margin-top: 10px;margin-bottom: 10px">Add Unit</button>    
+             <button \${click@=>router.arraypage.popUnit}>Pop Unit</button>    
+             
               
         </div>
         `;

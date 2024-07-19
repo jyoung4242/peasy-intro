@@ -58,6 +58,11 @@ export class Animations {
               <img id="arraybinding" src="${anime2}" alt="Array binding" style="display:block"/>
               
             <div>
+
+                <div class="animTargetDiv" \${===router.animations.isDivShowing}>
+                    <p>  Hello Peasy! </p>
+                </div>
+
                 <div>
                     
                     <label>Show</label>
@@ -66,9 +71,7 @@ export class Animations {
                     <input type="radio" data-id="hide" \${change@=>router.animations.selectChange}  name="fav_language">    
                     
                 </div>
-                <div class="animTargetDiv" \${===router.animations.isDivShowing}>
-                    <p>  Hello Peasy! </p>
-                </div>
+               
             
             
             </div>

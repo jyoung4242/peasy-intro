@@ -4,22 +4,20 @@ import apipic from "../assets/api.png";
 export class Peasy {
   template = `
         <style>
-          
+          .transitiondiv {
+            width: 100%;
+            overflow-y: scroll;
+          }
 
           #apipic {
-            position: fixed;
-            right: 20%;
-            bottom: 20px;
-            width: 25%;
-            
+            width: 30%;
             border-radius: 15px;
           }
 
         @media (max-width: 700px) {
         #apipic {
-            width: 60%;
-            right: 10%;
-            bottom: 100px;
+            width: 75%;
+            
           }
         }          
           
