@@ -105,8 +105,8 @@ export class NavBar {
                 <li><a \${click@=>navbar.linkRoute} data-id="events" class="home_link" href="#events">Events</a></li>
                 <li><a \${click@=>navbar.linkRoute} data-id="css" class="home_link" href="#css">CSS</a></li>
                 <li><a \${click@=>navbar.linkRoute} data-id="array" class="home_link" href="#array">Arrays</a></li>
-                <li><a class="bigword" \${click@=>navbar.linkRoute} data-id="animations" class="home_link" href="#animations">Animations</a></li>
-                <li><a class="bigword" \${click@=>navbar.linkRoute} data-id="components" class="home_link" href="#animations">Components</a></li>               
+                <li><a  \${click@=>navbar.linkRoute} data-id="animations" class="home_link bigword" href="#animations">Animations</a></li>
+                <li><a  \${click@=>navbar.linkRoute} data-id="components" class="home_link bigword" href="#animations">Components</a></li>               
                 
             </ul>
         </div>
