@@ -20,6 +20,7 @@ export class Components {
         @media (max-width: 700px) {
         .comp_content {
             width: 90%;
+            overflow-y: scroll;
         }
         .comp_content img {
             width: 100%;
