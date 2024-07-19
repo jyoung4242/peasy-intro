@@ -90,7 +90,10 @@ export class NavBar {
             padding: 0 5px;
             z-index: 2;
         }
-
+        .bigword{
+            font-size: 12px;
+        }
+        }
     </style>
     <nav>
         <div class="nav-wrapper">
@@ -102,7 +105,7 @@ export class NavBar {
                 <li><a \${click@=>navbar.linkRoute} data-id="events" class="home_link" href="#events">Events</a></li>
                 <li><a \${click@=>navbar.linkRoute} data-id="css" class="home_link" href="#css">CSS</a></li>
                 <li><a \${click@=>navbar.linkRoute} data-id="array" class="home_link" href="#array">Arrays</a></li>
-                <li><a \${click@=>navbar.linkRoute} data-id="animations" class="home_link" href="#animations">Animations</a></li>
+                <li><a class="bigword" \${click@=>navbar.linkRoute} data-id="animations" class="home_link" href="#animations">Animations</a></li>
                 <li></li>               
                 
             </ul>
