@@ -56,7 +56,7 @@ export class NavBar {
         nav {
             left:0;
             top: 8%;
-            width: 16%;
+            width: 18%;
             height: 92%;
             border-right: 1px solid var(--current-dark-accent);
             display: flex;

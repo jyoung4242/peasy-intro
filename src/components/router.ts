@@ -73,7 +73,7 @@ export class Router {
       width: 80%;
       height: 90%;
       top: 10%;
-      left: 20%;
+      left: 22%;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
