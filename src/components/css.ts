@@ -2,7 +2,7 @@
 import csspng from "../assets/css.png";
 
 export class CSSPage {
-  divColor: string = "black";
+  divColor: string = "red";
   boxWidth: number = 100;
   selectelement: HTMLSelectElement | undefined;
   changedivcolor(e: Event, m: any, elem: HTMLElement, attr: string, obj: any) {
@@ -51,13 +51,16 @@ export class CSSPage {
               
              <div>
                 <div style="margin-bottom: 10px">
-                    <div>Box Color: 
+                    <div>
+                    Box Color: 
                     <select \${==>router.csspage.selectelement} \${change@=>router.csspage.changedivcolor}>
                         <option value="red">Red</option>
                         <option value="blue">Blue</option>
                         <option value="green">Green</option>
-                    </select></div>
-                    <div> Box Width:
+                    </select>
+                    </div>
+                    <div style="margin-top: 10px"> 
+                    Box Width:
                     <input type="number" \${input@=>router.csspage.changeboxwidth} value="100"/></div>
                     
                    
