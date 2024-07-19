@@ -118,7 +118,7 @@ export class Bindings {
           .transitiondiv select {
             width: 100%;
           }   
-          
+          }
         </style>
         <div>
               <h1>Templates and Bindings</h1>

@@ -5,7 +5,19 @@ export class HomePage {
   };
 
   template = `
-   
+    <style>
+    @media (max-width: 700px) {
+          .transitiondiv {
+            width: 95%;
+            overflow-y: scroll;
+          }
+
+          .transitiondiv select {
+            width: 100%;
+          }   
+      }
+    
+    </style>
     <div >
       <h1>Home</h1>
       <p>This demo application is made to demonstrate the capabilities of Peasy-UI.  One aspect of peasy is that it can emulate a Single Page Application, and completely control the content of your app.  This demo is a mock-up of a SPA using Peasy-UI.

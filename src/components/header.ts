@@ -21,9 +21,13 @@ export class Header {
         @media (max-width: 700px) {
         header {
             height: 8%;
+            
           }
+        header h1 {
+          font-size: 18px;
         }
       </style>
+      
       <header>
           <h1>\${header.name}</h1>
           <uptime-counter>
