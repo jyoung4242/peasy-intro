@@ -8,11 +8,15 @@ export class Components {
 
   template = `
     <style>
-        .comp_content {
+        .transitiondiv {
+            width: 90%;
             overflow-y: scroll;
+        }
+        .comp_content {
+            
             border:1px solid whitesmoke;
-            height: 500px;
-            width: 800px;
+            
+            width: 75%;
             margin-top: 10px;
             padding: 5px;
         }
