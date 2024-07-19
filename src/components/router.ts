@@ -11,7 +11,7 @@ import { Animations } from "./animations";
 import { Components } from "./components";
 
 export class Router {
-  current: Routes = "home";
+  current: Routes = "components";
   changeRoute(newRoute: Routes) {
     this.current = "blank";
 

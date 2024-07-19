@@ -16,6 +16,15 @@ export class Components {
             margin-top: 10px;
             padding: 5px;
         }
+
+        @media (max-width: 700px) {
+        .comp_content {
+            width: 90%;
+        }
+        .comp_content img {
+            width: 100%;
+        }
+        }
     </style>
     
     <h1>Components</h1> 
