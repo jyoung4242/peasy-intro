@@ -36,8 +36,6 @@ export class Peasy {
   
               <p>Here is the Peasy-UI github repo: <a class="home_link"  href="https://github.com/peasy-lib/peasy-lib/tree/main/packages/peasy-ui>">Link to Repo</a></p>
 
-              <p>Here is Jurgen's github profile: <a class="home_link" href="https://github.com/jwx">Link to Profile</a></p>
-
               <p>Here is link to the Dev.to article: <a class="home_link"  href="https://dev.to/jyoung4242/">Peasy article</a></p>
               
               
