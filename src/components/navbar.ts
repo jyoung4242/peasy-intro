@@ -44,13 +44,6 @@ export class NavBar {
         }
 
         
-        .home_link {
-        color: whitesmoke;
-        }
-
-        .home_link:visited {
-        color: darkgrey;
-        }
 
         @media (max-width: 700px) {
         nav {
@@ -111,7 +104,7 @@ export class NavBar {
             </ul>
         </div>
         <div class="nav_aboutme">
-            <a \${click@=>navbar.linkRoute} data-id="about" class="home_link" href="#about">About Me</a>    
+            <a \${click@=>navbar.linkRoute} data-id="about" class="home_link" href="#about" style="color: whitesmoke;">About Me</a>    
         </div>
     </nav>
     `;

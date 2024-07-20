@@ -66,6 +66,14 @@ body {
   margin: auto;
 }
 
+.home_link {
+  color: var(--current-foreground);
+}
+
+.home_link:visited {
+  color: var(--current-foreground);
+}
+
 /* Media queries for tablets */
 @media (max-width: 900px) {
   body {

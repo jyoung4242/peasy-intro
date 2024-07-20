@@ -90,15 +90,7 @@ export class Router {
       }
     }
 
-    .home_link {
-      color: whitesmoke;
-    }
-
-    .home_link:visited {
-      color: darkgrey;
-    }
-
-    
+        
     .transitiondiv {
         opacity: 1;     
 
